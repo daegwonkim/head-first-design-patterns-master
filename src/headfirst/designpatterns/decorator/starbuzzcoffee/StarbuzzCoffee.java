@@ -15,12 +15,14 @@ public class StarbuzzCoffee {
         System.out.println(beverage1.description() + " $" + beverage1.cost());
 
         Beverage beverage2 = new DarkRoast();
+        beverage2.setSize(Beverage.Size.GRANDE);
         beverage2 = new Mocha(beverage2);
         beverage2 = new Mocha(beverage2);
         beverage2 = new Whip(beverage2);
         System.out.println(beverage2.description() + " $" + beverage2.cost());
 
         Beverage beverage3 = new HouseBlend();
+        beverage3.setSize(Beverage.Size.GRANDE);
         beverage3 = new Soy(beverage3);
         beverage3 = new Mocha(beverage3);
         beverage3 = new Whip(beverage3);
